@@ -277,6 +277,11 @@ class Settings extends \lithium\data\Model
 		return $value;
 	}
 
+	public static function validateSmartyForm($form)
+	{
+		;
+	}
+
 	protected static function dottedToArray($setting)
 	{
 		$result = [];
@@ -291,7 +296,8 @@ class Settings extends \lithium\data\Model
 				array_unshift($array, '');
 				$count++;
 			}
-						list(
+
+			list(
 				$result['section'],
 				$result['subsection'],
 				$result['name'],
